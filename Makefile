@@ -1,6 +1,6 @@
 all: main.o function.o
 	g++ ./temp/main.o ./temp/function.o -o ./out/hw.o
-	clear
+	#clear
 	@echo "==================== compile finish ====================" 
 	@echo "If you want to use it please type in ./out/hw.o {string}"
 	@echo "use 'make clean' can clean all temp file"
