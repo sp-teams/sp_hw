@@ -18,8 +18,7 @@ int main (int argv,char*args[])
             else std::cout<<std::endl;
         }
     }
-    std::cout<<lenght_check(args[1]) <<std::endl;
-    if( lenght_check(args[1]) )
+    if( lenght_check(args[1]) && En_check(args[1]))
     {
         std::cout<<"suceess"<<std::endl;
         return 0;
@@ -27,6 +26,14 @@ int main (int argv,char*args[])
     else 
     {
         std::cout<<"fail"<<std::endl;
+        if( !lenght_check(args[1]) )
+        {
+            std::string str=args[1];
+            if(str.size() < 8) std::cout<<"The lenght of string less than 8"<<std::endl;
+            else if(str.size() > 16 ) std::cout<<"The lenght of string more than 16"<<std::endl;
+        }
+        if( !En_check(args[1]) ) std::cout<< "Lack of A-Z"<<std::endl;
+
         return 1;
     }
 }
