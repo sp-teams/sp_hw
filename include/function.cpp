@@ -27,6 +27,7 @@ int symbol_check(char* str)
 {
     std::string str2=str;
     int result =0;
+
     for(int i =0;i < str2.size();i++)
     {
         if( ( str[i] >= 32 && str[i] <= 47 ) || ( str[i] >= 58 && str[i] <= 64 ) || ( str[i] >= 91 && str[i] <= 96 ) || ( str[i] >= 123 && str[i] <= 126 ) )

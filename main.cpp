@@ -2,7 +2,7 @@
 #include <string>
 #include "include/function.hpp"
 
-int main (int argv,char*args[])
+int main (int argv,char* (args[]))
 {
     int debugmod = 0;
     char en[26];
@@ -11,14 +11,8 @@ int main (int argv,char*args[])
     initial(en,EN,number); // giving array en EN number first value
     if(debugmod)
     {
-        for(int i =0 ;i < 26;i++)
-        {
-            std::cout << en[i] <<","<<EN[i]<<",";
-            if(i<10)std::cout<<number[i]<<std::endl;
-            else std::cout<<std::endl;
-        }
+        return 0;
     }
-    
     //Check whether the string is empty
    
     if(argv==1)
