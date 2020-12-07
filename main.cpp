@@ -11,10 +11,11 @@ int main (int argv,char* (args[]))
     initial(en,EN,number); // giving array en EN number first value
     if(debugmod)
     {
+        num_word(args[1]);
         return 0;
     }
+
     //Check whether the string is empty
-   
     if(argv==1)
     {
         std:: cout<< "String is empty"<<std::endl;
@@ -22,7 +23,7 @@ int main (int argv,char* (args[]))
     }
     
     //Success check
-    if( lenght_check(args[1]) && En_check(args[1]) && symbol_check(args[1]) )
+    if( lenght_check(args[1]) && En_check(args[1]) && symbol_check(args[1]) && number_check(args[1]) &&num_word(args[1]) )
     {
         std::cout<<"suceess"<<std::endl;
         return 0;
@@ -40,8 +41,10 @@ int main (int argv,char* (args[]))
         }
         //A-Z lacking report
         if( !En_check(args[1]) ) std::cout<< "Lack of A-Z"<<std::endl;
+        //symbols detect
         if( !symbol_check(args[1]) ) std::cout<<"Lack of symbol"<<std::endl;
-
+        if( !number_check(args[1]) ) std::cout<<"Lack of number"<<std::endl;
+        if( num_word(args[1]) ) std::cout<<"Your number is close to alphabet closely"<<std::endl;
         return 1;
     }
 }
