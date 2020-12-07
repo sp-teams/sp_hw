@@ -10,7 +10,7 @@ int main (int argv,char* (args[]))
     char number[10];
     initial(en,EN,number); // giving array en EN number first value
     if(debugmod)
-    {
+    {//
         num_word(args[1]);
         return 0;
     }
