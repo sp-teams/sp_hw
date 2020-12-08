@@ -20,8 +20,8 @@ Type *make* in terminal and then the program will appear in the folder which nam
 - [x] At least include 1  capital letter character
 - [x] Input string as sys.argv,
 *if( conditions conform )*
-*std::cout <<success<<std::endl;*
+*std::cout <<"success"<<std::endl;*
 *else*
-*std::cout<<fail<<std::endl;*
+*std::cout<<"fail"<<std::endl;*
 - [x] 加分題 **All**
 
