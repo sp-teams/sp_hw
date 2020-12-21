@@ -1,8 +1,8 @@
 # <h1 style ="text-align: center">Assignment of System Programming</h1>
-##How to use it 
+## How to use it 
 Type *make* in terminal and then the program will appear in the folder which named **out** 
 
-##<h3 style="text-align:center">How to use </h3>
+## <h3 style="text-align:center">How to use </h3>
 
 * First :<br>
     Please type in *make* and make sure you have installed **g++** and **make** 
